@@ -18,8 +18,8 @@ const checkStringPalindrome = function (polindromString) {
     reversString += normalString.at(i);
   }
 
-  const resultString = reversString === normalString;
-  return resultString;
+  const isPolindrom = reversString === normalString;
+  return isPolindrom;
 };
 
 // Строка является палиндромом
