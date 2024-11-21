@@ -1,3 +1,1 @@
-import {getDescriptionPhotos} from './data.js';
-
-console.log(getDescriptionPhotos());
+import './thumbnail.js';

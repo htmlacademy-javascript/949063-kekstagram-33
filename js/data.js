@@ -58,6 +58,6 @@ const createDescriptionPhoto = function () {
 };
 
 // Создаем 25 новых экземпляров объекта описания фотографий
-const getDescriptionPhotos = () => Array.from({length: 25}, createDescriptionPhoto);
+const getDescriptionPhotos = (count) => Array.from({length: count}, createDescriptionPhoto);
 
 export {getDescriptionPhotos};
