@@ -37,7 +37,7 @@ const MAX_LIKES = 25;
 const creatCommentsList = function () {
   return {
     id: commentId(),
-    avatar: `img/avatar-${getRandomInteger(1, 6)}.svg}`,
+    avatar: `img/avatar-${getRandomInteger(1, 6)}.svg`,
     message: getRandomElement(MESSAGE),
     name: getRandomElement(NAME),
   };
@@ -58,6 +58,7 @@ const createDescriptionPhoto = function () {
 };
 
 // Создаем 25 новых экземпляров объекта описания фотографий
-const getDescriptionPhotos = (count) => Array.from({length: count}, createDescriptionPhoto);
+const getDescriptionPhotos = () => Array.from({length: 25}, createDescriptionPhoto);
 
 export {getDescriptionPhotos};
+export {getComments};

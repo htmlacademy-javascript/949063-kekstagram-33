@@ -47,8 +47,5 @@ const getRandomElement = function (element) {
 const randomIdPhoto = getRandomNonrepitionInteger(MIN_ID_PHOTO, MAX_ID_PHOTO);
 const randomUrlPhoto = getRandomNonrepitionInteger(MIN_URL_PHOTO, MAX_URL_PHOTO);
 
-export {getRandomInteger};
-export {commentId};
-export {randomIdPhoto};
-export {randomUrlPhoto};
-export {getRandomElement};
+const isEscapeKey = (evt) => evt.key === 'Escape';
+export {getRandomInteger, isEscapeKey, commentId, randomIdPhoto, randomUrlPhoto, getRandomElement};
