@@ -7,8 +7,8 @@ const descriptionPhotos = getDescriptionPhotos();
 const fragment = document.createDocumentFragment();
 
 const renderPhoto = (picturesList) => {
-  descriptionPhotos.forEach((picture) => {
-    const {url, description, likes, comments} = picture;
+  descriptionPhotos.forEach((pictureData) => {
+    const {url, description, likes, comments} = pictureData;
     const pictureElement = pictureTemplate.cloneNode(true);
     const imageElement = pictureElement.querySelector('.picture__img');
     imageElement.src = url;
@@ -21,7 +21,7 @@ const renderPhoto = (picturesList) => {
 
     const onPictureElementClick = (evt) => {
       evt.preventDefault();
-      showBigPicture(picture);
+      showBigPicture(pictureData);
     };
 
     pictureElement.addEventListener('click', onPictureElementClick);
