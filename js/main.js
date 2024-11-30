@@ -1,6 +1,7 @@
 import './full-picture.js';
 import './thumbnail.js';
 import {renderPhoto} from './thumbnail.js';
+import './form.js';
 // import {renderComment} from './full-picture.js';
 
 const picturesList = document.querySelector('.pictures');
